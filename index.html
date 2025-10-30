@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Creative Portfolio Landing</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Morphing Blob Background -->
+  <div class="blob-bg">
+    <svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+      <g transform="translate(300,300)">
+        <path id="blob" fill="#D4845C">
+          <animate attributeName="d" dur="10s" repeatCount="indefinite"
+            values="
+              M150,-100Q180,-40 150,10Q120,60 80,90Q40,120 -10,140Q-55,152 -105,122Q-150,92 -140,40Q-130,-10 -120,-60Q-110,-100 -70,-130Q-35,-160 10,-160Q55,-170 95,-140Q135,-110 150,-100Z;
+              M140,-120Q180,-70 160,-20Q140,20 100,70Q60,120 20,120Q-40,115 -85,100Q-130,85 -125,45Q-120,5 -110,-45Q-100,-80 -70,-120Q-40,-160 10,-170Q60,-180 100,-150Q140,-120 140,-120Z;
+              M150,-100Q180,-40 150,10Q120,60 80,90Q40,120 -10,140Q-55,152 -105,122Q-150,92 -140,40Q-130,-10 -120,-60Q-110,-100 -70,-130Q-35,-160 10,-160Q55,-170 95,-140Q135,-110 150,-100Z
+            "
+          />
+        </path>
+      </g>
+    </svg>
+  </div>
+
+  <!-- Floating Cartoon Shapes -->
+  <div class="floating-shapes">
+    <div class="shape circle"></div>
+    <div class="shape square"></div>
+    <div class="shape blob"></div>
+  </div>
+
+  <!-- Main Container -->
+  <div class="container">
+    <h1 class="title">Welcome to My Portfolio</h1>
+    <button id="exploreBtn" class="morph-glow-btn">Explore</button>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <h2>Choose an Option</h2>
+      <div class="buttons">
+        <a href="cv.pdf" target="_blank" rel="noopener" class="btn btn-cv">📄 View My CV</a>
+        <a href="https://daniel-s-profile-2fc5elb.gamma.site/" target="_blank" rel="noopener" class="btn btn-website">🌐 Visit My Website</a>
+      </div>
+      <button id="closeModal" class="close-btn">&times;</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
